@@ -55,6 +55,9 @@
     window.doSignaling = iceRestart => {
       pc.createOffer({iceRestart})
         .then(offer => {
+          pc.onicecandidate = function(c) {
+            console.log('candidate', c && c.candidate)
+          }
           pc.setLocalDescription(offer)
 
           return fetch(`/doSignaling`, {
@@ -67,7 +70,10 @@
           })
         })
         .then(res => res.json())
-        .then(res => pc.setRemoteDescription(res))
+        .then(res => {
+          console.log("remote desc", res.sdp)
+          return pc.setRemoteDescription(res)
+        })
         .catch(alert)
     }
 
