@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ccdeer/webrtc/v2/internal/util"
 	"github.com/pion/quic"
 	"github.com/pion/transport/test"
-	"github.com/pion/webrtc/v2/internal/util"
 )
 
 func TestQUICTransport_E2E(t *testing.T) {

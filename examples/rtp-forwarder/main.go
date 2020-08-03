@@ -6,9 +6,9 @@ import (
 	"net"
 	"time"
 
+	"github.com/ccdeer/webrtc/v2"
+	"github.com/ccdeer/webrtc/v2/examples/internal/signal"
 	"github.com/pion/rtcp"
-	"github.com/pion/webrtc/v2"
-	"github.com/pion/webrtc/v2/examples/internal/signal"
 )
 
 type udpConn struct {

@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ccdeer/webrtc/v2/pkg/rtcerr"
 	"github.com/pion/datachannel"
 	"github.com/pion/logging"
 	"github.com/pion/sctp"
-	"github.com/pion/webrtc/v2/pkg/rtcerr"
 )
 
 const sctpMaxChannels = uint16(65535)

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pion/webrtc/v2"
+	"github.com/ccdeer/webrtc/v2"
 
-	"github.com/pion/webrtc/v2/examples/internal/signal"
+	"github.com/ccdeer/webrtc/v2/examples/internal/signal"
 )
 
 func main() {

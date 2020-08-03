@@ -16,10 +16,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ccdeer/webrtc/v2/internal/util"
+	"github.com/ccdeer/webrtc/v2/pkg/rtcerr"
 	"github.com/pion/ice"
 	"github.com/pion/transport/test"
-	"github.com/pion/webrtc/v2/internal/util"
-	"github.com/pion/webrtc/v2/pkg/rtcerr"
 	"github.com/stretchr/testify/assert"
 )
 

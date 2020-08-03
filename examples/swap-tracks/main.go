@@ -6,10 +6,10 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/ccdeer/webrtc/v2"
+	"github.com/ccdeer/webrtc/v2/examples/internal/signal"
 	"github.com/pion/rtcp"
 	"github.com/pion/rtp"
-	"github.com/pion/webrtc/v2"
-	"github.com/pion/webrtc/v2/examples/internal/signal"
 )
 
 func main() {

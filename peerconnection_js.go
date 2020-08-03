@@ -6,8 +6,8 @@ package webrtc
 import (
 	"syscall/js"
 
+	"github.com/ccdeer/webrtc/v2/pkg/rtcerr"
 	"github.com/pion/sdp/v2"
-	"github.com/pion/webrtc/v2/pkg/rtcerr"
 )
 
 // PeerConnection represents a WebRTC connection that establishes a

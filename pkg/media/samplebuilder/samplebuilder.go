@@ -2,8 +2,8 @@
 package samplebuilder
 
 import (
+	"github.com/ccdeer/webrtc/v2/pkg/media"
 	"github.com/pion/rtp"
-	"github.com/pion/webrtc/v2/pkg/media"
 )
 
 // SampleBuilder buffers packets until media frames are complete.
