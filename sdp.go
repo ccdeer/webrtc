@@ -244,6 +244,9 @@ func addTransceiverSDP(d *sdp.SessionDescription, isPlanB bool, mediaEngine *Med
 		return false, nil
 	}
 
+    uri, _ := url.Parse(sdp.ABSSendTimeURI)
+    media.WithExtMap(sdp.ExtMap{2, 8, uri, nil})
+
 	for _, mt := range transceivers {
 		if mt.Sender() != nil && mt.Sender().track != nil {
 			track := mt.Sender().track
