@@ -246,10 +246,10 @@ func addTransceiverSDP(d *sdp.SessionDescription, isPlanB bool, mediaEngine *Med
 	}
 
     uri, _ := url.Parse(sdp.ABSSendTimeURI)
-    media.WithExtMap(sdp.ExtMap{2, sdp.DirectionSendOnly, uri, nil})
+    media.WithExtMap(sdp.ExtMap{2, -1, uri, nil})
 
     uri, _ = url.Parse("http://www.webrtc.org/experiments/rtp-hdrext/playout-delay")
-    media.WithExtMap(sdp.ExtMap{12, sdp.DirectionSendOnly, uri, nil})
+    media.WithExtMap(sdp.ExtMap{12, -1, uri, nil})
 
 	for _, mt := range transceivers {
 		if mt.Sender() != nil && mt.Sender().track != nil {
